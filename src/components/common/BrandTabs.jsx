@@ -25,37 +25,20 @@ const generalBrands = [
   { name: "Classic Gold", image: "/products/general/classic gold.jpg" },
   { name: "Golden Eagle", image: "/products/general/golden eagle.jpg" },
   { name: "Veer Shivaji", image: "/products/general/veer shivaji.jpg" },
-  {
-    name: "Gajraj Evergreen",
-    image: "/products/general/gajraj.jpg",
-  },
-  {
-    name: "Aahar HMT Rice",
-    image: "/products/general/aahar.jpg",
-  },
+  { name: "Gajraj Evergreen", image: "/products/general/gajraj.jpg" },
+  { name: "Aahar HMT Rice", image: "/products/general/aahar.jpg" },
   { name: "Cow", image: "/products/general/cow.jpg" },
   { name: "Mezbaan", image: "/products/general/mezbaan.jpg" },
   { name: "Lal Badshah", image: "/products/general/lalbadshah.jpg" },
-  {
-    name: "Raja Gajendra",
-    image: "/products/general/raja gajendra.jpg",
-  },
-  {
-    name: "Dawat Special",
-    image: "/products/general/daawat.jpg",
-  },
-  {
-    name: "Golden Cycle",
-    image: "/products/general/golden cycle brand.jpg",
-  },
-  {
-    name: "Kissan Tractor",
-    image: "/products/general/kissan tractor.jpg",
-  },
+  { name: "Raja Gajendra", image: "/products/general/raja gajendra.jpg" },
+  { name: "Dawat Special", image: "/products/general/daawat.jpg" },
+  { name: "Golden Cycle", image: "/products/general/golden cycle brand.jpg" },
+  { name: "Kissan Tractor", image: "/products/general/kissan tractor.jpg" }
 ];
 
 const BrandTabs = () => {
-  const [active, setActive] = useState("mill");
+  // GENERAL is default active
+  const [active, setActive] = useState("general");
   const [selectedBrand, setSelectedBrand] = useState(generalBrands[0]);
 
   const handleBrandChange = (e) => {
@@ -68,16 +51,16 @@ const BrandTabs = () => {
       {/* Tabs */}
       <div className="brand-tab-buttons">
         <button
-          className={active === "mill" ? "active" : ""}
-          onClick={() => setActive("mill")}
-        >
-          Mill Brand
-        </button>
-        <button
           className={active === "general" ? "active" : ""}
           onClick={() => setActive("general")}
         >
           General Brand
+        </button>
+        <button
+          className={active === "mill" ? "active" : ""}
+          onClick={() => setActive("mill")}
+        >
+          Mill Brand
         </button>
       </div>
 
@@ -147,6 +130,7 @@ const BrandTabs = () => {
                     src={selectedBrand.image}
                     alt={selectedBrand.name}
                     className="general-image"
+                    loading="lazy"
                   />
                 </div>
                 <div className="general-info">
