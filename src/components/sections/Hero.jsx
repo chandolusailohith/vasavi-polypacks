@@ -1,6 +1,13 @@
 import React from "react";
 
 const Hero = () => {
+  const scrollToContact = () => {
+    const el = document.getElementById("contact");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="hero">
       <div className="hero-text">
@@ -13,17 +20,21 @@ const Hero = () => {
 
         <div className="hero-buttons">
           <a
-  href="https://wa.me/918247674904?text=Hi%2C%20I%20need%20enquiry%20on%20bags."
-  className="btn btn-primary"
-  target="_blank"
-  rel="noreferrer"
->
-  Chat on WhatsApp
-</a>
-
-          <a href="#enquiry" className="btn btn-outline">
-            Get a Quote
+             href="https://wa.me/918247674904?text=Hi%20Vasavi%20Polypacks%2C%20I%20need%20enquiry%20on%20bags."
+            className="btn btn-primary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Chat on WhatsApp
           </a>
+
+          <button
+            type="button"
+            className="btn btn-outline"
+            onClick={scrollToContact}
+          >
+            Get a Quote
+          </button>
         </div>
 
         <div className="hero-highlights">

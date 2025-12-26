@@ -262,6 +262,42 @@ body {
   color: #424242;
 }
 
+/* Mill process featured video */
+.mill-video-section {
+  margin: 32px auto 36px;
+  text-align: center;
+}
+
+.mill-video-section h3 {
+  font-size: 1.1rem;
+  color: #e65100;
+  margin-bottom: 4px;
+}
+
+.mill-video-section p {
+  max-width: 640px;
+  margin: 0 auto 16px;
+  font-size: 0.9rem;
+  color: #5d4037;
+}
+
+.mill-video-wrapper {
+  max-width: 720px;        /* was 900px */
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+.mill-video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 400px;       /* limit vertical size */
+  object-fit: cover;
+}
+
+
 /* Products */
 .product-grid {
   display: grid;
@@ -702,7 +738,7 @@ body {
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
-    background: #ffffff;              /* no strong gradient */
+    background: #ffffff;
   }
 
   .hero-image {
@@ -721,7 +757,7 @@ body {
   }
 
   body {
-    background: #f4f4f5;              /* softer neutral bg on phone */
+    background: #f4f4f5;
   }
 
   .section-light {
@@ -731,7 +767,7 @@ body {
   .nav {
     justify-content: space-between;
     background: #ffffff;
-    backdrop-filter: none;            /* avoid blur look on mobile */
+    backdrop-filter: none;
   }
 
   /* logo + title sizing so brand name stays on one line */
@@ -765,7 +801,7 @@ body {
   }
 
   .hero-card {
-    background: #2563eb;             /* calmer blue card */
+    background: #2563eb;
     box-shadow: 0 16px 32px rgba(37, 99, 235, 0.2);
   }
 
@@ -814,5 +850,19 @@ body {
 
   .nav-mobile-menu a:hover {
     color: #2563eb;
+  }
+
+  /* tighter spacing for video on mobile */
+  .mill-video-section {
+    margin: 24px auto 28px;
+    padding: 0 4vw;
+  }
+
+  .mill-video-section h3 {
+    font-size: 1rem;
+  }
+
+  .mill-video-section p {
+    font-size: 0.86rem;
   }
 }

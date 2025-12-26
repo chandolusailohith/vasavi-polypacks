@@ -59,7 +59,7 @@ const Contact = () => {
         <div className="contact-info">
           <h3>Contact Details</h3>
           <p>Vasavi Polypacks – manufacturer of BOPP laminated bags.</p>
-          <p>Address: Janapadu, near HP Petrol Bunk.</p>
+          <p>Address: Janapadu, 522413,near HP Petrol Bunk.</p>
           <p>Phone / WhatsApp: +91 82476 74904</p>
           <p>Email: chandolusrinu9@gmail.com</p>
 
@@ -69,7 +69,8 @@ const Contact = () => {
           </p>
 
           <a
-            href="https://wa.me/918247674904?text=Hi%2C%20I%20need%20enquiry%20on%20bags."
+            href="https://wa.me/918247674904?text=Hi%20Vasavi%20Polypacks%2C%20I%20need%20enquiry%20on%20bags."
+
             className="btn btn-primary full-width"
             target="_blank"
             rel="noreferrer"
