@@ -59,7 +59,7 @@ const Contact = () => {
         <div className="contact-info">
           <h3>Contact Details</h3>
           <p>Vasavi Polypacks – manufacturer of BOPP laminated bags.</p>
-          <p>Address: Janapadu, 522413,near HP Petrol Bunk.</p>
+          <p>Address: Janapadu, 522413, near HP Petrol Bunk.</p>
           <p>Phone / WhatsApp: +91 82476 74904</p>
           <p>Email: chandolusrinu9@gmail.com</p>
 
