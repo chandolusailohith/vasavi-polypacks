@@ -19,7 +19,7 @@ const About = () => {
       {/* Mill Process Video */}
       <div className="mill-video-section">
         <h3>Inside Our Manufacturing Unit</h3>
-        <p>Watch the complete BOPP bag manufacturing process at our mill.</p>
+        <p>Watch the complete BOPP bag manufacturing process at our Industry.</p>
         <div className="mill-video-wrapper">
           <video
             src="/videos/mill-process.mp4" // put file at public/videos/mill-process.mp4
