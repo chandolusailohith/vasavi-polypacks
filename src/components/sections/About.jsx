@@ -36,7 +36,7 @@ const About = () => {
         <div className="about-card location-card" onClick={handleOpenMaps}>
           <h3>Location</h3>
           <p style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <span>Janapadu, 522413, Near HP Petrol Bunk</span>
+            <span>Janapadu, 522413, Palnadu District, Near HP Petrol Bunk</span>
             <span
               style={{ color: "#e53935", fontSize: "20px", lineHeight: 1 }}
               aria-hidden="true"

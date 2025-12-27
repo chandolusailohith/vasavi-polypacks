@@ -62,7 +62,7 @@ const Contact = () => {
 
           {/* UPDATED ADDRESS LINE */}
           <p>
-            Address: Janapadu, 522413, near HP Petrol Bunk{" "}
+            Address: Janapadu, 522413, Palnadu District, near HP Petrol Bunk{" "}
             <a
               href="https://maps.app.goo.gl/zzAMfhYbEwrK4WzZA"
               target="_blank"
