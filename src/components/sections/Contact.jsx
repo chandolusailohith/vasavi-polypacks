@@ -59,7 +59,21 @@ const Contact = () => {
         <div className="contact-info">
           <h3>Contact Details</h3>
           <p>Vasavi Polypacks – manufacturer of BOPP laminated bags.</p>
-          <p>Address: Janapadu, 522413, near HP Petrol Bunk.</p>
+
+          {/* UPDATED ADDRESS LINE */}
+          <p>
+            Address: Janapadu, 522413, near HP Petrol Bunk{" "}
+            <a
+              href="https://maps.app.goo.gl/zzAMfhYbEwrK4WzZA"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#e53935", marginLeft: "4px" }}
+              title="Open in Google Maps"
+            >
+              📍
+            </a>
+          </p>
+
           <p>Phone / WhatsApp: +91 82476 74904</p>
           <p>Email: chandolusrinu9@gmail.com</p>
 
@@ -70,7 +84,6 @@ const Contact = () => {
 
           <a
             href="https://wa.me/918247674904?text=Hi%20Vasavi%20Polypacks%2C%20I%20need%20enquiry%20on%20bags."
-
             className="btn btn-primary full-width"
             target="_blank"
             rel="noreferrer"
@@ -83,7 +96,7 @@ const Contact = () => {
         <form className="contact-form" onSubmit={handleSubmit}>
           <h3>Send an Enquiry</h3>
 
-          {/* Company name – allow letters, numbers & basic symbols, but not empty / weird */}
+          {/* Company name */}
           <div className="form-row">
             <label>Company name</label>
             <input
@@ -97,7 +110,7 @@ const Contact = () => {
             />
           </div>
 
-          {/* Contact person – letters and spaces only */}
+          {/* Contact person */}
           <div className="form-row">
             <label>Contact person</label>
             <input
@@ -111,7 +124,7 @@ const Contact = () => {
             />
           </div>
 
-          {/* Phone – 10 digits */}
+          {/* Phone */}
           <div className="form-row">
             <label>Phone</label>
             <input
@@ -152,7 +165,7 @@ const Contact = () => {
             </select>
           </div>
 
-          {/* Location fields */}
+          {/* State */}
           <div className="form-row">
             <label>State</label>
             <select
@@ -205,7 +218,7 @@ const Contact = () => {
             />
           </div>
 
-          {/* Pincode – 6 digits */}
+          {/* Pincode */}
           <div className="form-row">
             <label>Pincode</label>
             <input
@@ -218,7 +231,7 @@ const Contact = () => {
             />
           </div>
 
-          {/* Quantity – numbers + commas allowed */}
+          {/* Quantity */}
           <div className="form-row">
             <label>Approximate quantity</label>
             <input
@@ -230,7 +243,7 @@ const Contact = () => {
             />
           </div>
 
-          {/* Requirement details – required only for Own/Mill brand */}
+          {/* Requirement details */}
           <div className="form-row">
             <label>Requirement details</label>
             <textarea
