@@ -28,16 +28,19 @@ const About = () => {
       </div>
 
       <div className="about-grid">
+        {/* UPDATED LOCATION CARD */}
         <div className="about-card">
           <h3>Location</h3>
-          <p>
-            Janapadu, 522413, Near HP Petrol Bunk{" "}
+          <p style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <span>Janapadu, 522413, Near HP Petrol Bunk</span>
             <a
               href="https://maps.app.goo.gl/zzAMfhYbEwrK4WzZA"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ color: "#e53935", fontSize: "20px", lineHeight: 1 }}
+              title="Open in Google Maps"
             >
-              (Open in Maps)
+              📍
             </a>
           </p>
         </div>
