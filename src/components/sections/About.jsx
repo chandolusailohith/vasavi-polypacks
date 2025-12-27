@@ -1,6 +1,10 @@
 import React from "react";
 
 const About = () => {
+  const handleOpenMaps = () => {
+    window.open("https://maps.app.goo.gl/zzAMfhYbEwrK4WzZA", "_blank");
+  };
+
   return (
     <section id="about" className="section section-light">
       <div className="section-header">
@@ -28,20 +32,17 @@ const About = () => {
       </div>
 
       <div className="about-grid">
-        {/* UPDATED LOCATION CARD */}
-        <div className="about-card">
+        {/* LOCATION CARD – whole card clickable */}
+        <div className="about-card location-card" onClick={handleOpenMaps}>
           <h3>Location</h3>
           <p style={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <span>Janapadu, 522413, Near HP Petrol Bunk</span>
-            <a
-              href="https://maps.app.goo.gl/zzAMfhYbEwrK4WzZA"
-              target="_blank"
-              rel="noopener noreferrer"
+            <span
               style={{ color: "#e53935", fontSize: "20px", lineHeight: 1 }}
-              title="Open in Google Maps"
+              aria-hidden="true"
             >
               📍
-            </a>
+            </span>
           </p>
         </div>
 

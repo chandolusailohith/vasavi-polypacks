@@ -251,6 +251,11 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
 }
 
+/* clickable Location card */
+.location-card {
+  cursor: pointer;
+}
+
 .about-card h3 {
   font-size: 0.95rem;
   color: #f57c00;
@@ -296,7 +301,6 @@ body {
   max-height: 400px;       /* limit vertical size */
   object-fit: cover;
 }
-
 
 /* Products */
 .product-grid {
