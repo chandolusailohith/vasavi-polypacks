@@ -14,7 +14,7 @@ const WhyUs = () => {
       <div className="why-grid">
         <div className="why-card">
           <h3>High Quality</h3>
-          <p>GEM testing and strict quality checks before dispatch.</p>
+          <p>Drop testing and strict quality checks before dispatch.</p>
         </div>
         <div className="why-card">
           <h3>Large Capacity</h3>
