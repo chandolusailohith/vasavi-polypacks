@@ -11,7 +11,7 @@ const About = () => {
         <h2>About Vasavi Polypacks</h2>
         <p>
           Vasavi Polypacks manufactures BOPP laminated packaging bags for rice,
-          dal, flour, and food grains, serving mills, traders, and wholesalers
+          dal, flour, cem and food grains, serving mills, traders, and wholesalers
           with bulk, customized packaging solutions.
         </p>
       </div>
