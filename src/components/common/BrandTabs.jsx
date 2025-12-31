@@ -20,7 +20,7 @@ const generalBrands = [
   { name: "5 Star", image: "/products/general/5 star.jpg" },
   { name: "Tajmahal Gold", image: "/products/general/tajmahal gold.jpg" },
   { name: "Tomato Gold", image: "/products/general/tomato gold.jpg" },
-  { name: "JSR Rice", image: "/products/general/jsr rice.jpg" },
+  { name: "JSR Rice", image: "/products/general/jsr.jpg" },
   { name: "HMT Rice", image: "/products/general/hmt.jpg" },
   { name: "Classic Gold", image: "/products/general/classic gold.jpg" },
   { name: "Golden Eagle", image: "/products/general/golden eagle.jpg" },
